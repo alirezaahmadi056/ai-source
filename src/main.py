@@ -32,8 +32,11 @@ def ai_planning_route():
                int(load_data["doYouWorkOnHolidays"]), int(load_data["disability"]),
                int(load_data["addictionred"])]
     if model == 'oogway':
-        result = neural_planning_ai.predict(ai_data).tolist()
-        return jsonify({"result": eval(result[0])})
+        try:
+            result = neural_planning_ai.predict(ai_data).tolist()
+            return jsonify({"result": eval(result[0])})
+        except:
+            return make_response("error-0", 500)
 
     elif model == 'shifu':
         try:
