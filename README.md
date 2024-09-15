@@ -2,7 +2,7 @@
 oogway => neural network <br/> shifu => linear regression
 # Example Request
   **Route:**
-      http://services.amozeshgam.com/ai/planning:8000
+      http://services.amozeshgam.com:8000/ai/planning
   <br/>
   **Header Data:** 
       add 'x-api-key' and add 'model'
