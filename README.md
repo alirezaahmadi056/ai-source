@@ -22,7 +22,7 @@ oogway => neural network <br/> shifu => linear regression
         "interestInMathematics":"0",//true = 1 false = 0
         "computerExperience":"1",//with year
         "whichOneDoYouLikeMore":"0",//engineering = 1 artistic = 0
-        "whichCaseIsmoreRelevant":"0",//engineering = 1 artistic = 0
+        "whichCaseIsmoreRelevant":"0",//fast = 0 slow = 1
         "doYouWorkOnHolidays":"1",//true = 1 false = 0
         "disability":"0",//true = 1 false = 0
         "addictionred":"0"//true = 1 false = 0
