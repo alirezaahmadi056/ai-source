@@ -19,7 +19,7 @@ def main_route():
 def ai_planning_route():
     model = request.headers.get("model")
     api_key = request.headers.get("x-api-key")
-    if CalculateMd5.calculate_hash(api_key) != "2d469051f1224fd252ba28b9d84c966d":
+    if CalculateMd5.calculate_hash(api_key) != "de80f50f0af4b84f5ca8a77fc2fbe9a7":
         return make_response("error-z", 500)
     data = request.get_json()
     dump_data = json.dumps(data)
@@ -54,7 +54,7 @@ def change_data():
     api_key = request.headers.get('x-api-key')
     if api_key == "":
         return make_response("error", 500)
-    if CalculateMd5.calculate_hash(api_key) != "2d469051f1224fd252ba28b9d84c966d":
+    if CalculateMd5.calculate_hash(api_key) != "de80f50f0af4b84f5ca8a77fc2fbe9a7":
         return make_response("error", 500)
     neural_planning_ai = NeuralPlanningAI.NeuralPlanningAI()
     neural_planning_ai.create_and_train_model()
