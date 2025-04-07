@@ -21,6 +21,7 @@ class LinearPlanningAI:
         Y = self.data['result']
         self.X_train, self.X_test, self.Y_train, self.Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
         self.model.fit(self.X_train, self.Y_train)
+        
 
     def predict(self, new_data):
         return self.encoder.inverse_transform(self.model.predict(np.array(new_data).reshape(1, -1)))
